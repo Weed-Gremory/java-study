@@ -1,0 +1,19 @@
+public class DesafioTernaryOperator {
+    public static void main(String[] args) {
+        // Don't modify these lines
+        int score = 85;  // This will be different in each test
+        String grade = "";
+        String message = "";
+        
+        // Write your ternary operators here
+        
+        grade = (score >= 90) ? "A" : (score >= 80) ? "B" : (score >= 70) ? "C" : (score >= 60) ? "D" : "F";
+
+        message = (grade == "A") ? "Excellent!" : (grade == "B" || grade == "C") ? "Good job!" : (grade == "D") ? "You need to study more" : "Please see the teacher";
+        
+        // Don't modify the code below
+        System.out.println("Student Score: " + score);
+        System.out.println("Grade: " + grade);
+        System.out.println("Message: " + message);
+    }
+}
