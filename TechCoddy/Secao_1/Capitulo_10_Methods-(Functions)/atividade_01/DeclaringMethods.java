@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class DeclaringMethods {
+    // Method declaration
+    public static void sumNumbers() {
+        // Complete Method
+        int sum = 0;
+        
+        for (int i = 0; i <= 1000; i++){
+            sum = sum + i;
+        }
+        System.out.println(sum);
+    }
+    
+    
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        for (int i = 0; i < n; i++) {
+            // Call the method n times
+            sumNumbers();
+        }
+        
+        scanner.close();
+    }
+}
