@@ -25,6 +25,8 @@ class Main {
 
         ZooFeeder.printInventory(meatStock);
 
+        scanner.close();
+
 
         
         // TODO: Crie um ArrayList<Food> e adicione objetos Meat e Vegetable
